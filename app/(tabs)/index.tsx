@@ -1,5 +1,5 @@
-import { Stack } from 'expo-router';
 import React, { useState } from 'react';
+import { router, Stack } from 'expo-router';
 import { Pressable, View, TextInput, Text } from 'react-native';
 
 import { ScreenContent } from '~/components/ScreenContent';
@@ -11,6 +11,8 @@ export default function Home() {
     // save this search to the database
 
     // navigate to the search results after saving the search
+
+    router.push('/search');
   };
 
   return (
